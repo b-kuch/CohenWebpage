@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="Stylesheet" type="text/css" href="style.css"/>
+	<link rel="Stylesheet" type="text/css" href="fonts.css"/>
+	<link rel="shortcut icon" href="favicon.ico" />
+	<title>Leonard Cohen</title>
+	<script>
+	function msToTime(s) {
+		var ms = s % 1000;
+		s = (s - ms) / 1000;
+		var secs = s % 60;
+		s = (s - secs) / 60;
+		var mins = s % 60;
+		s = (s - mins) / 60;
+		var hrs = s % 24;
+		s = (s - hrs) / 24;
+		var days = s;
+		s = (s - days) / 24;
+
+		return days + " dni, " + hrs + " godzin, " + mins + " minut i " + secs + " sekund od premiery Thanks for the Dance";
+	}
+	function startTime() {
+		var delta = new Date() - new Date(2019, 10, 22);
+		document.getElementById('txt').innerHTML = msToTime(delta);
+		var t = setTimeout(startTime, 500);
+	}
+	</script>
+</head>
+
+<body onload="startTime()">
+<header><div>Leonard Cohen</div></header>
+<main>
+	<img src="cohen.jpeg" alt="Cohen zdjęcie">
+	<section>
+	<h2>Mała biografia</h2>
+	<article>
+		Urodził się w 1934 roku w Montrealu jako Leonard Norman Cohen, 
+		syn Mashy (Marshy) i Nathana Cohenów, w średniozamożnej żydowskiej rodzinie. 
+		Ojciec pochodził z Polski, a matka, Masha Klonitsky, była córką talmudysty, 
+		rabbiego Solomona Klonitsky-Kline, Żyda litewskiego pochodzenia. 15 sierpnia 1937 
+		roku zmarł dziadek Leonarda ze strony ojca, Lyon Cohen, człowiek aktywny w społeczności 
+		kanadyjskich Żydów. W 1944 zmarł ojciec Leonarda Nathan.
+	</article>
+	<article>
+		Dzięki swojej rodzinie otrzymał solidną edukację na poziomie średnim i zaczął studia na 
+		anglojęzycznym Uniwersytecie McGilla w rodzinnym mieście. Mimo że był przeciętnym studentem, 
+		jeszcze w trakcie studiów zdobył prestiżową nagrodę McNaughton Prize za osiągnięcia literackie. 
+		5 października 1955 ukończył studia na Uniwersytecie McGilla uzyskując stopień bakałarza sztuk 
+		(Bachelor of Arts). W maju 1956 roku wydał swój pierwszy tom poezji Let Us Compare Mythologies. 
+		Na przestrzeni następnych lat pisał i publikował poezję oraz wydał dwie powieści: The Favorite Game 1963 
+		oraz Beautiful Losers w 1966 r.
+	</article>
+	<article>
+		Leonard Cohen w wywiadach często powtarzał, że zaczął śpiewać, gdyż trudno mu było wyżyć z 
+		pisania. Biografowie nieco inaczej przedstawiają jego życie w tamtym okresie. Honoraria literackie, 
+		rządowe granty oraz dochody z rodzinnego przedsiębiorstwa wystarczały na wygodne życie. 
+		Leonard Cohen w tym czasie dużo podróżował, prowadził intensywne życie towarzyskie i erotyczne. 
+		Lubił otaczać się pięknymi kobietami i, dopóki było to legalne, eksperymentował z LSD.
+		Choć nauczył się grać na gitarze w wieku trzynastu lat, a wcześniej zaczął pisać piosenki, 
+		początkowo traktował muzykę w sposób czysto rekreacyjny i nie zamierzał zostać piosenkarzem. 
+		Nigdy też nie był wybitnym instrumentalistą. Przypadkową sławę przyniosła mu piosenka Suzanne, 
+		której profesjonalną wersję nagrała folkowa piosenkarka Judy Collins. Utwór ten stał się radiowym 
+		przebojem roku 1965. Judy Collins wprowadziła Cohena w środowisko muzyki folk. Pierwszy publiczny 
+		występ Leonarda Cohena jako piosenkarza miał miejsce 30 kwietnia 1967 roku w Town Hall w Nowym Jorku, 
+		na koncercie charytatywnym na rzecz organizacji domagającej się zaprzestania prób z bronią jądrową 
+		(The Committee for a SANE Nuclear Policy). Judy Collins namówiła Cohena, by wystąpił z nią na 
+		Newport Folk Festival w 1967. Wydany w tym samym roku album Songs of Leonard Cohen zawiera takie 
+		przeboje artysty jak: Suzanne, Sisters of Mercy, So Long, Marianne, Hey, That’s No Way to Say Goodbye. 
+		Album odniósł wielki sukces.
+	</article>
+	</section>
+
+	<article>
+		<h3>Wybrane albumy</h3>
+		<table>
+		  <tr>
+			<th rowspan="2">Tytuł</th>
+			<th rowspan="2">Data premiery</th>
+			<th colspan="3">Pozycja na liście</th>
+		  </tr>
+		  <tr>
+			<td>POL</td>
+			<td>USA</td>
+			<td>UK</td>
+		  </tr>
+		  <tr>
+			<td>Songs of Leonard Cohen<br></td>
+			<td>27 grudnia 1967</td>
+			<td>-</td>
+			<td>83</td>
+			<td>13</td>
+		  </tr>
+		  <tr>
+			<td>Songs of Love and Hate</td>
+			<td>19 marca 1971</td>
+			<td>-</td>
+			<td>145</td>
+			<td>4</td>
+		  </tr>
+		  <tr>
+			<td>Various Positions</td>
+			<td>11 grudnia 1984</td>
+			<td>-</td>
+			<td>-</td>
+			<td>52</td>
+		  </tr>
+		  <tr>
+			<td>I'm Your Man</td>
+			<td>2 lutego 1988</td>
+			<td>-</td>
+			<td>-</td>
+			<td>48</td>
+		  </tr>
+		  <tr>
+			<td>The Future</td>
+			<td>24 listopada 1992</td>
+			<td>-</td>
+			<td>-</td>
+			<td>36</td>
+		  </tr>
+		  <tr>
+			<td>Ten New Songs</td>
+			<td>9 października 2001</td>
+			<td>1</td>
+			<td>143</td>
+			<td>26</td>
+		  </tr>
+		  <tr>
+			<td>Old Ideas</td>
+			<td>31 stycznia 2012</td>
+			<td>2</td>
+			<td>3</td>
+			<td>2</td>
+		  </tr>
+		  <tr>
+			<td>Popular Problems</td>
+			<td>22 września 2014</td>
+			<td>3</td>
+			<td>15</td>
+			<td>5</td>
+		  </tr>
+		  <tr>
+			<td>You want it Darker</td>
+			<td>21 października 2016</td>
+			<td>1</td>
+			<td>7</td>
+			<td>4</td>
+		  </tr>
+		  <tr>
+			<td>Thanks for the Dance</td>
+			<td>22 listopada 2019</td>
+			<td>-</td>
+			<td>61</td>
+			<td>7</td>
+		  </tr>
+		</table>
+	</article>
+	<article>
+		<h3>Obiektywna lista najlepszych utworów Leonarda Cohena</h3>
+		<ol>
+			<li>A Thousand Kisses Deep</li>
+			<li>Famous Blue Raincoat</li>
+			<li>Avalanche</li>
+			<li>Hallelujah</li>
+			<li>Suzanne</li>
+			<li>Anyhow</li>
+		</ol>
+	</article>
+	
+</main>
+<nav>
+	<div class="nav-item"><a href="main.html">Strona Główna</a></div>
+	<div class="nav-item"><a href="utwory.html">Utwory</a></div>
+	<div class="nav-item"><a href="poezja.html">Poezja</a></div>
+	<div class="nav-item"><a href="about.asp">About</a></div>
+	<div class="nav-item"><a href="about.asp">About</a></div>
+</nav>
+<aside>
+	<div id="txt"></div>
+</aside>
+<footer><div>Wykonał Bartłomiej Kucharczyk</div></footer>
+</body></html>

@@ -1,0 +1,152 @@
+html, body {
+	background-color: #576574;
+
+	font-family: sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+a {
+	all: unset;
+}
+header {
+	grid-area: title;
+	background-color: #222f3e;
+	font-family: "Courier New", sans-serif;
+	color: #c8d6e5;
+	font-size: xxx-large;
+	position:relative;
+	padding-left: 2vw;
+	letter-spacing: 0.5vw;
+
+}
+header div {
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%); 
+}
+div#txt {
+	all: unset;
+}
+main {
+	grid-area: main;
+	
+	text-align: center;
+	background-color: #222f3e;
+	border-radius: 25px 25px 0 0;
+	margin: 1vw;
+	padding: 5vh 5vw;
+	color : #c8d6e5;
+	margin-bottom: 0;
+	margin-right: 0;
+}
+
+main * {
+	margin-bottom: 2vh;
+}
+nav {
+	border-radius: 25px;
+	grid-area: navbar;
+	background-color: #222f3e;
+	color: #c8d6e5;
+	padding: 2.5vw;
+	margin: 1vw;
+	margin-right: 0;
+	margin-bottom: 0;
+}
+
+aside {
+	
+	grid-area: aside;
+	background-color: #222f3e;
+	color: #c8d6e5;
+	padding: 1vw;
+	margin: 0.5vh 0;
+}
+.icon {
+	height: 1.5vh;
+	width: 1.5vh;
+}
+div.nav-item {
+	width: 100%;
+}
+
+div.nav-item a:hover {
+	background-color: #4056A1;
+	color: #C5CBE3;
+	width: 100%;
+}
+
+footer {
+	padding-left: 1em;
+	grid-area: footer;
+	background-color: #10ac84;
+	position:relative;
+	
+}
+
+footer div {
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%); 
+	color: #222f3e;
+}
+table {
+	margin: 0 auto;
+	border-collapse: collapse;
+}
+table, th, td {
+	border: 1px solid #c8d6e5;
+}
+
+@media screen and (max-width: 1024px)
+{
+	body {
+	display: grid;
+    grid-template-columns: 4fr 1fr;
+	grid-template-rows: 8vh 1fr 1fr 1.5em;
+	grid-template-areas:
+		"title	title"
+		"main	navbar"
+		"main	aside"
+		"footer	footer";
+	}
+	aside {
+		border-radius: 25px;
+		margin: 1vw;
+		margin-right: 0;
+		padding: 2.5vw;
+		margin-bottom: 0;
+		border-radius: 25px 25px 0 0;
+	}
+}
+/* Szablon desktopowy */
+@media screen and (min-width: 1025px)
+{
+	body {
+	display: grid;
+    grid-template-columns: 80vw 1fr;
+	grid-template-rows: 10vh 5vh 1fr 3vh;
+	grid-template-areas:
+		"title	title"
+		"aside 	aside"
+		"main	navbar"
+		"footer	footer";
+	}
+	aside {
+		
+		padding-left: 2vw;
+		position:relative;
+		border-top: 2px solid #576574;
+	}
+	aside div#txt {
+		position: absolute;
+		top: 50%;
+		transform: translate(0, -50%)
+	}
+	nav {
+		border-radius: 25px 25px 0 0;
+	}
+}
